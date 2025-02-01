@@ -12,11 +12,11 @@ namespace EvParcial.Controllers
 {
     public class carreras_controller
     {
-        private static readonly Conexion conexion = new Conexion();
+        private readonly Conexion cn = new Conexion();
 
         internal static Conexion Conexion => Conexion1;
 
-        internal static Conexion Conexion1 => conexion;
+        internal static Conexion Conexion1 => Conexion;
 
         public List<Carreras_model> ObtenerTodas()
         {

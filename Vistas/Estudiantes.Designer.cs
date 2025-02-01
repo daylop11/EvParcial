@@ -29,22 +29,25 @@
         private void InitializeComponent()
         {
             this.pnlEstudiantes = new System.Windows.Forms.Panel();
+            this.btnAggStudent = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnGuardar = new System.Windows.Forms.Button();
             this.lblBienvenidos = new System.Windows.Forms.Label();
             this.lblemail = new System.Windows.Forms.Label();
             this.lblid = new System.Windows.Forms.Label();
             this.lblname = new System.Windows.Forms.Label();
-            this.btnEmail = new System.Windows.Forms.Button();
-            this.btniD1 = new System.Windows.Forms.Button();
-            this.btnName1 = new System.Windows.Forms.Button();
-            this.btnAggStudent = new System.Windows.Forms.Button();
+            this.txtNameApellido = new System.Windows.Forms.TextBox();
+            this.txtiD = new System.Windows.Forms.TextBox();
+            this.txtemail = new System.Windows.Forms.TextBox();
             this.pnlEstudiantes.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnlEstudiantes
             // 
             this.pnlEstudiantes.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.pnlEstudiantes.Controls.Add(this.txtemail);
+            this.pnlEstudiantes.Controls.Add(this.txtiD);
+            this.pnlEstudiantes.Controls.Add(this.txtNameApellido);
             this.pnlEstudiantes.Controls.Add(this.btnAggStudent);
             this.pnlEstudiantes.Controls.Add(this.btnCancelar);
             this.pnlEstudiantes.Controls.Add(this.btnGuardar);
@@ -52,14 +55,22 @@
             this.pnlEstudiantes.Controls.Add(this.lblemail);
             this.pnlEstudiantes.Controls.Add(this.lblid);
             this.pnlEstudiantes.Controls.Add(this.lblname);
-            this.pnlEstudiantes.Controls.Add(this.btnEmail);
-            this.pnlEstudiantes.Controls.Add(this.btniD1);
-            this.pnlEstudiantes.Controls.Add(this.btnName1);
             this.pnlEstudiantes.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlEstudiantes.Location = new System.Drawing.Point(0, 0);
             this.pnlEstudiantes.Name = "pnlEstudiantes";
             this.pnlEstudiantes.Size = new System.Drawing.Size(534, 461);
             this.pnlEstudiantes.TabIndex = 0;
+            // 
+            // btnAggStudent
+            // 
+            this.btnAggStudent.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAggStudent.Location = new System.Drawing.Point(221, 374);
+            this.btnAggStudent.Name = "btnAggStudent";
+            this.btnAggStudent.Size = new System.Drawing.Size(98, 57);
+            this.btnAggStudent.TabIndex = 9;
+            this.btnAggStudent.Text = "AGREGAR ESTUDIANTE";
+            this.btnAggStudent.UseVisualStyleBackColor = true;
+            this.btnAggStudent.Click += new System.EventHandler(this.button4_Click);
             // 
             // btnCancelar
             // 
@@ -118,43 +129,26 @@
             this.lblname.TabIndex = 3;
             this.lblname.Text = "NOMBRE Y APELLIDO";
             // 
-            // btnEmail
+            // txtNameApellido
             // 
-            this.btnEmail.BackColor = System.Drawing.Color.White;
-            this.btnEmail.Location = new System.Drawing.Point(55, 284);
-            this.btnEmail.Name = "btnEmail";
-            this.btnEmail.Size = new System.Drawing.Size(405, 32);
-            this.btnEmail.TabIndex = 2;
-            this.btnEmail.UseVisualStyleBackColor = false;
+            this.txtNameApellido.Location = new System.Drawing.Point(49, 111);
+            this.txtNameApellido.Name = "txtNameApellido";
+            this.txtNameApellido.Size = new System.Drawing.Size(411, 20);
+            this.txtNameApellido.TabIndex = 10;
             // 
-            // btniD1
+            // txtiD
             // 
-            this.btniD1.BackColor = System.Drawing.Color.White;
-            this.btniD1.Location = new System.Drawing.Point(55, 194);
-            this.btniD1.Name = "btniD1";
-            this.btniD1.Size = new System.Drawing.Size(405, 32);
-            this.btniD1.TabIndex = 1;
-            this.btniD1.UseVisualStyleBackColor = false;
+            this.txtiD.Location = new System.Drawing.Point(49, 194);
+            this.txtiD.Name = "txtiD";
+            this.txtiD.Size = new System.Drawing.Size(411, 20);
+            this.txtiD.TabIndex = 11;
             // 
-            // btnName1
+            // txtemail
             // 
-            this.btnName1.BackColor = System.Drawing.Color.White;
-            this.btnName1.Location = new System.Drawing.Point(55, 111);
-            this.btnName1.Name = "btnName1";
-            this.btnName1.Size = new System.Drawing.Size(405, 32);
-            this.btnName1.TabIndex = 0;
-            this.btnName1.UseVisualStyleBackColor = false;
-            // 
-            // btnAggStudent
-            // 
-            this.btnAggStudent.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAggStudent.Location = new System.Drawing.Point(221, 374);
-            this.btnAggStudent.Name = "btnAggStudent";
-            this.btnAggStudent.Size = new System.Drawing.Size(98, 57);
-            this.btnAggStudent.TabIndex = 9;
-            this.btnAggStudent.Text = "AGREGAR ESTUDIANTE";
-            this.btnAggStudent.UseVisualStyleBackColor = true;
-            this.btnAggStudent.Click += new System.EventHandler(this.button4_Click);
+            this.txtemail.Location = new System.Drawing.Point(49, 284);
+            this.txtemail.Name = "txtemail";
+            this.txtemail.Size = new System.Drawing.Size(411, 20);
+            this.txtemail.TabIndex = 12;
             // 
             // Estudiantes
             // 
@@ -174,14 +168,14 @@
 
         private System.Windows.Forms.Panel pnlEstudiantes;
         private System.Windows.Forms.Label lblname;
-        private System.Windows.Forms.Button btnEmail;
-        private System.Windows.Forms.Button btniD1;
-        private System.Windows.Forms.Button btnName1;
         private System.Windows.Forms.Label lblemail;
         private System.Windows.Forms.Label lblid;
         private System.Windows.Forms.Label lblBienvenidos;
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Button btnGuardar;
         private System.Windows.Forms.Button btnAggStudent;
+        private System.Windows.Forms.TextBox txtemail;
+        private System.Windows.Forms.TextBox txtiD;
+        private System.Windows.Forms.TextBox txtNameApellido;
     }
 }

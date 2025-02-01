@@ -45,10 +45,11 @@ namespace EvParcial.Vistas
             }
             public void btnAggStudent_Click(object sender, EventArgs e)
             {
-                var estudiante = new Estudiantes_model();
-
-                estudiante.Nombre = txtNombre.Text;
-                estudiante.Apellido = txtApellido.Text;
+                var estudiante = new Estudiantes_model()
+                {
+                    Nombre = txtNombre.Text,
+                    Apellido = txtApellido.Text,
+                };
 
                 bool resultado = Controllers_AgregarEstudiante(estudiante);
                 if (resultado)

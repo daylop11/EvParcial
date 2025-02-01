@@ -11,8 +11,8 @@ namespace EvParcial.Models
         public int Identificacion { get; set; }
         public string Nombre { get; set; }
         public string Dni { get; set; }
-        public int Estudiante_Id { get; internal set; }
-        public string Apellido { get; internal set; }
-        public int Carrera_Id { get; internal set; }
+        public int Estudiante_Id { get;set; }
+        public string Apellido { get;set; }
+        public int Carrera_Id { get;set; }
     }
 }
