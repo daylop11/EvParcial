@@ -46,33 +46,45 @@ namespace EvParcial.Vistas
             public void btnAggStudent_Click(object sender, EventArgs e)
             {
                 var estudiante = new Estudiantes_model();
+
+                estudiante.Nombre = txtNombre.Text;
+                estudiante.Apellido = txtApellido.Text;
+
+                bool resultado = Controllers_AgregarEstudiante(estudiante);
+                if (resultado)
                 {
-                    Nombre = txtNombre.GetType().Name;
+                    MessageBox.Show("Estudiante agregado exitosamente.");
                 }
-                Apellido = txtApellido.GetType().Name;
-            }
-            bool resultado = Controllers_AgregarEstudiante("Estudiante");
-             if {
-            }
-            
-private static bool Controllers_AgregarEstudiante(object estudiante)
-            {
-                throw new NotImplementedException();
-            }
-            if (resultado.AgregarEstudiante)
+                else
+                {
+                    MessageBox.Show("Hubo un error al agregar el estudiante.");
+                }
             }
 
-        private void AgregarEstudiante_Load_1(object sender, EventArgs e)
+            private static bool Controllers_AgregarEstudiante(Estudiantes_model estudiante)
+            {
+                try
+                {
+                    return true;
+                }
+                catch (Exception)
+                {
+                    return false;
+                }
+            }
+        }
+
+
+            private void AgregarEstudiante_Load_1(object sender, EventArgs e)
         {
 
         }
     }
+}
 
     internal class resultado
         {
             internal class AgregarEstudiante
             {
             }
-        }
-    }
         }
