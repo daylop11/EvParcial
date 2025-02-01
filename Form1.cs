@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using EvParcial.Vistas;
 
 namespace EvParcial
 {
@@ -24,17 +25,20 @@ namespace EvParcial
 
         private void btnPagos_Click(object sender, EventArgs e)
         {
-
+            Frm_Pagos frmPagos = new Frm_Pagos(); 
+            frmPagos.Show(); 
         }
 
         private void btnEstudiantes_Click(object sender, EventArgs e)
         {
-
+            Frm_Estudiantes frmEstudiantes = new Frm_Estudiantes();
+            frmEstudiantes.Show();
         }
 
         private void btnCarreras_Click(object sender, EventArgs e)
         {
-
+            Frm_Carreras frmCarreras = new Frm_Carreras();
+            frmCarreras.Show();
         }
 
         private void label1_Click(object sender, EventArgs e)

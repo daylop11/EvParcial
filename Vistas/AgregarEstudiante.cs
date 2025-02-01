@@ -14,9 +14,9 @@ using EvParcial.Models;
 
 namespace EvParcial.Vistas
 {
-    public partial class AgregarEstudiante : Form
+    public partial class Frm_AgregarEstudiante : Form
     {
-        public AgregarEstudiante()
+        public Frm_AgregarEstudiante()
         {
             InitializeComponent();
         }

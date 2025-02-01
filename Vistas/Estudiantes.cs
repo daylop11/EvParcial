@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace EvParcial.Vistas
 {
-    public partial class Estudiantes : Form
+    public partial class Frm_Estudiantes : Form
     {
-        public Estudiantes()
+        public Frm_Estudiantes()
         {
             InitializeComponent();
         }

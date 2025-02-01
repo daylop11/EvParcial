@@ -1,6 +1,6 @@
 ﻿namespace EvParcial.Vistas
 {
-    partial class Estudiantes
+    partial class Frm_Estudiantes
     {
         /// <summary>
         /// Required designer variable.
@@ -29,6 +29,9 @@
         private void InitializeComponent()
         {
             this.pnlEstudiantes = new System.Windows.Forms.Panel();
+            this.txtemail = new System.Windows.Forms.TextBox();
+            this.txtiD = new System.Windows.Forms.TextBox();
+            this.txtNameApellido = new System.Windows.Forms.TextBox();
             this.btnAggStudent = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnGuardar = new System.Windows.Forms.Button();
@@ -36,9 +39,6 @@
             this.lblemail = new System.Windows.Forms.Label();
             this.lblid = new System.Windows.Forms.Label();
             this.lblname = new System.Windows.Forms.Label();
-            this.txtNameApellido = new System.Windows.Forms.TextBox();
-            this.txtiD = new System.Windows.Forms.TextBox();
-            this.txtemail = new System.Windows.Forms.TextBox();
             this.pnlEstudiantes.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -61,12 +61,33 @@
             this.pnlEstudiantes.Size = new System.Drawing.Size(534, 461);
             this.pnlEstudiantes.TabIndex = 0;
             // 
+            // txtemail
+            // 
+            this.txtemail.Location = new System.Drawing.Point(49, 284);
+            this.txtemail.Name = "txtemail";
+            this.txtemail.Size = new System.Drawing.Size(411, 20);
+            this.txtemail.TabIndex = 12;
+            // 
+            // txtiD
+            // 
+            this.txtiD.Location = new System.Drawing.Point(49, 194);
+            this.txtiD.Name = "txtiD";
+            this.txtiD.Size = new System.Drawing.Size(411, 20);
+            this.txtiD.TabIndex = 11;
+            // 
+            // txtNameApellido
+            // 
+            this.txtNameApellido.Location = new System.Drawing.Point(49, 111);
+            this.txtNameApellido.Name = "txtNameApellido";
+            this.txtNameApellido.Size = new System.Drawing.Size(411, 20);
+            this.txtNameApellido.TabIndex = 10;
+            // 
             // btnAggStudent
             // 
             this.btnAggStudent.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAggStudent.Location = new System.Drawing.Point(221, 374);
+            this.btnAggStudent.Location = new System.Drawing.Point(211, 365);
             this.btnAggStudent.Name = "btnAggStudent";
-            this.btnAggStudent.Size = new System.Drawing.Size(98, 57);
+            this.btnAggStudent.Size = new System.Drawing.Size(106, 75);
             this.btnAggStudent.TabIndex = 9;
             this.btnAggStudent.Text = "AGREGAR ESTUDIANTE";
             this.btnAggStudent.UseVisualStyleBackColor = true;
@@ -129,34 +150,13 @@
             this.lblname.TabIndex = 3;
             this.lblname.Text = "NOMBRE Y APELLIDO";
             // 
-            // txtNameApellido
-            // 
-            this.txtNameApellido.Location = new System.Drawing.Point(49, 111);
-            this.txtNameApellido.Name = "txtNameApellido";
-            this.txtNameApellido.Size = new System.Drawing.Size(411, 20);
-            this.txtNameApellido.TabIndex = 10;
-            // 
-            // txtiD
-            // 
-            this.txtiD.Location = new System.Drawing.Point(49, 194);
-            this.txtiD.Name = "txtiD";
-            this.txtiD.Size = new System.Drawing.Size(411, 20);
-            this.txtiD.TabIndex = 11;
-            // 
-            // txtemail
-            // 
-            this.txtemail.Location = new System.Drawing.Point(49, 284);
-            this.txtemail.Name = "txtemail";
-            this.txtemail.Size = new System.Drawing.Size(411, 20);
-            this.txtemail.TabIndex = 12;
-            // 
-            // Estudiantes
+            // Frm_Estudiantes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(534, 461);
             this.Controls.Add(this.pnlEstudiantes);
-            this.Name = "Estudiantes";
+            this.Name = "Frm_Estudiantes";
             this.Text = "Estudiantes";
             this.pnlEstudiantes.ResumeLayout(false);
             this.pnlEstudiantes.PerformLayout();

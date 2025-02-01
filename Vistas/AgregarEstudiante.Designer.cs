@@ -2,7 +2,7 @@
 
 namespace EvParcial.Vistas
 {
-    partial class AgregarEstudiante
+    partial class Frm_AgregarEstudiante
     {
         /// <summary>
         /// Required designer variable.
@@ -139,7 +139,7 @@ namespace EvParcial.Vistas
             this.panel1.Controls.Add(this.btniD1);
             this.panel1.Controls.Add(this.btnName1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(8, 8);
+            this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(534, 461);
             this.panel1.TabIndex = 1;
@@ -209,11 +209,11 @@ namespace EvParcial.Vistas
             this.btnName1.TabIndex = 0;
             this.btnName1.UseVisualStyleBackColor = false;
             // 
-            // AgregarEstudiante
+            // Frm_AgregarEstudiante
             // 
             this.ClientSize = new System.Drawing.Size(534, 461);
             this.Controls.Add(this.panel1);
-            this.Name = "AgregarEstudiante";
+            this.Name = "Frm_AgregarEstudiante";
             this.Load += new System.EventHandler(this.AgregarEstudiante_Load_1);
             this.pnlEstudiantes.ResumeLayout(false);
             this.pnlEstudiantes.PerformLayout();

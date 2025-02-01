@@ -1,6 +1,6 @@
 ﻿namespace EvParcial.Vistas
 {
-    partial class Pagos
+    partial class Frm_Pagos
     {
         /// <summary>
         /// Required designer variable.
@@ -171,13 +171,13 @@
             this.btnName.TabIndex = 0;
             this.btnName.UseVisualStyleBackColor = false;
             // 
-            // Pagos
+            // Frm_Pagos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(534, 461);
             this.Controls.Add(this.pnlEstudiantes);
-            this.Name = "Pagos";
+            this.Name = "Frm_Pagos";
             this.Text = "Pagos";
             this.pnlEstudiantes.ResumeLayout(false);
             this.pnlEstudiantes.PerformLayout();

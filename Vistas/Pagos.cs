@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace EvParcial.Vistas
 {
-    public partial class Pagos : Form
+    public partial class Frm_Pagos : Form
     {
-        public Pagos()
+        public Frm_Pagos()
         {
             InitializeComponent();
         }
