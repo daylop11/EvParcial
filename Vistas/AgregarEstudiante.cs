@@ -25,67 +25,53 @@ namespace EvParcial.Vistas
         {
 
         }
-        public partial class FrmAgregarEstudiante : Form
+        //public object txtNombre;
+
+
+        public void btnGuardar_Click(object sender, EventArgs e)
         {
-            public Controllers_Estudiantes controller = new Controllers_Estudiantes();
-            public object txtNombre;
+        }
 
-            public FrmAgregarEstudiante()
+        private static bool Controllers_AgregarEstudiante(Estudiantes_model estudiante)
+        {
+            try
             {
+                return true;
             }
-
-            public object Nombre { get; private set; }
-            public object Apellido { get; private set; }
-            public int Carrera_Id { get; private set; }
-            public object txtApellido { get; private set; }
-            public object txtCarreraId { get; private set; }
-
-            public void btnGuardar_Click(object sender, EventArgs e)
+            catch (Exception)
             {
-            }
-            public void btnAggStudent_Click(object sender, EventArgs e)
-            {
-                var estudiante = new Estudiantes_model()
-                {
-                    Nombre = txtNombre.Text,
-                    Apellido = txtApellido.Text,
-                };
-
-                bool resultado = Controllers_AgregarEstudiante(estudiante);
-                if (resultado)
-                {
-                    MessageBox.Show("Estudiante agregado exitosamente.");
-                }
-                else
-                {
-                    MessageBox.Show("Hubo un error al agregar el estudiante.");
-                }
-            }
-
-            private static bool Controllers_AgregarEstudiante(Estudiantes_model estudiante)
-            {
-                try
-                {
-                    return true;
-                }
-                catch (Exception)
-                {
-                    return false;
-                }
+                return false;
             }
         }
 
 
-            private void AgregarEstudiante_Load_1(object sender, EventArgs e)
+
+        private void AgregarEstudiante_Load_1(object sender, EventArgs e)
         {
 
+        }
+
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            var estudiante = new Estudiantes_model()
+            {
+                Nombre = txtNombre.Text,
+                Apellido = txtApellido.Text,
+            };
+
+            var controller = new Controllers_Estudiantes();
+
+
+            bool resultado = Controllers_AgregarEstudiante(estudiante);
+            if (resultado)
+            {
+                MessageBox.Show("Estudiante agregado exitosamente.");
+            }
+            else
+            {
+                MessageBox.Show("Hubo un error al agregar el estudiante.");
+            }
         }
     }
 }
-
-    internal class resultado
-        {
-            internal class AgregarEstudiante
-            {
-            }
-        }

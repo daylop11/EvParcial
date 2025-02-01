@@ -46,7 +46,7 @@
             // 
             // pnlEstudiantes
             // 
-            this.pnlEstudiantes.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.pnlEstudiantes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.pnlEstudiantes.Controls.Add(this.lblFecha);
             this.pnlEstudiantes.Controls.Add(this.dateTimePicker1);
             this.pnlEstudiantes.Controls.Add(this.btniD);
