@@ -106,8 +106,7 @@
             this.label1.Size = new System.Drawing.Size(489, 52);
             this.label1.TabIndex = 4;
             this.label1.Text = "Sistema de Control de Pagos";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
-            // 
+           
             // Frm_MenuPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);

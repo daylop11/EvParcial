@@ -40,10 +40,5 @@ namespace EvParcial
             Frm_Carreras frmCarreras = new Frm_Carreras();
             frmCarreras.Show();
         }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }
