@@ -40,5 +40,12 @@ namespace EvParcial
             Frm_Carreras frmCarreras = new Frm_Carreras();
             frmCarreras.Show();
         }
+
+        private void btnReportes_Click(object sender, EventArgs e)
+        {
+            Reportes reportes = new Reportes();
+            reportes.Show();
+            
+        }
     }
 }

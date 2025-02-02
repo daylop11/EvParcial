@@ -19,7 +19,10 @@ namespace EvParcial.Vistas
 
         private void Reportes_Load(object sender, EventArgs e)
         {
-
+            this.sistemaDeControlTableAdapter1.Fill(sistemaDeControlDePagosDeUniversidadDataSet.SistemaDeControl);
+            
+            this.reportViewer1.RefreshReport();
+            
         }
     }
 }

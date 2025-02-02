@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             this.pnlMenuPrincipal = new System.Windows.Forms.Panel();
-            this.btnEstudiantes = new System.Windows.Forms.Button();
-            this.btnPagos = new System.Windows.Forms.Button();
-            this.btnCarreras = new System.Windows.Forms.Button();
-            this.btnReportes = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.btnReportes = new System.Windows.Forms.Button();
+            this.btnCarreras = new System.Windows.Forms.Button();
+            this.btnPagos = new System.Windows.Forms.Button();
+            this.btnEstudiantes = new System.Windows.Forms.Button();
             this.pnlMenuPrincipal.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -52,28 +52,27 @@
             this.pnlMenuPrincipal.TabIndex = 0;
             this.pnlMenuPrincipal.Click += new System.EventHandler(this.Frm_MenuPrincipal_Load);
             // 
-            // btnEstudiantes
+            // label1
             // 
-            this.btnEstudiantes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.btnEstudiantes.Font = new System.Drawing.Font("Yu Gothic UI Semilight", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEstudiantes.Location = new System.Drawing.Point(105, 157);
-            this.btnEstudiantes.Name = "btnEstudiantes";
-            this.btnEstudiantes.Size = new System.Drawing.Size(114, 76);
-            this.btnEstudiantes.TabIndex = 0;
-            this.btnEstudiantes.Text = "Estudiantes";
-            this.btnEstudiantes.UseVisualStyleBackColor = false;
-            this.btnEstudiantes.Click += new System.EventHandler(this.btnEstudiantes_Click);
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Sylfaen", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(33, 45);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(489, 52);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "Sistema de Control de Pagos";
             // 
-            // btnPagos
+            // btnReportes
             // 
-            this.btnPagos.Font = new System.Drawing.Font("Yu Gothic UI Semilight", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPagos.Location = new System.Drawing.Point(105, 267);
-            this.btnPagos.Name = "btnPagos";
-            this.btnPagos.Size = new System.Drawing.Size(114, 74);
-            this.btnPagos.TabIndex = 1;
-            this.btnPagos.Text = "Pagos";
-            this.btnPagos.UseVisualStyleBackColor = true;
-            this.btnPagos.Click += new System.EventHandler(this.btnPagos_Click);
+            this.btnReportes.Font = new System.Drawing.Font("Yu Gothic UI Semilight", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReportes.Location = new System.Drawing.Point(317, 267);
+            this.btnReportes.Name = "btnReportes";
+            this.btnReportes.Size = new System.Drawing.Size(114, 74);
+            this.btnReportes.TabIndex = 3;
+            this.btnReportes.Text = "Reportes";
+            this.btnReportes.UseVisualStyleBackColor = true;
+            this.btnReportes.Click += new System.EventHandler(this.btnReportes_Click);
             // 
             // btnCarreras
             // 
@@ -86,27 +85,29 @@
             this.btnCarreras.UseVisualStyleBackColor = true;
             this.btnCarreras.Click += new System.EventHandler(this.btnCarreras_Click);
             // 
-            // btnReportes
+            // btnPagos
             // 
-            this.btnReportes.Font = new System.Drawing.Font("Yu Gothic UI Semilight", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnReportes.Location = new System.Drawing.Point(317, 267);
-            this.btnReportes.Name = "btnReportes";
-            this.btnReportes.Size = new System.Drawing.Size(114, 74);
-            this.btnReportes.TabIndex = 3;
-            this.btnReportes.Text = "Reportes";
-            this.btnReportes.UseVisualStyleBackColor = true;
+            this.btnPagos.Font = new System.Drawing.Font("Yu Gothic UI Semilight", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPagos.Location = new System.Drawing.Point(105, 267);
+            this.btnPagos.Name = "btnPagos";
+            this.btnPagos.Size = new System.Drawing.Size(114, 74);
+            this.btnPagos.TabIndex = 1;
+            this.btnPagos.Text = "Pagos";
+            this.btnPagos.UseVisualStyleBackColor = true;
+            this.btnPagos.Click += new System.EventHandler(this.btnPagos_Click);
             // 
-            // label1
+            // btnEstudiantes
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Sylfaen", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(33, 45);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(489, 52);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "Sistema de Control de Pagos";
-           
+            this.btnEstudiantes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnEstudiantes.Font = new System.Drawing.Font("Yu Gothic UI Semilight", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEstudiantes.Location = new System.Drawing.Point(105, 157);
+            this.btnEstudiantes.Name = "btnEstudiantes";
+            this.btnEstudiantes.Size = new System.Drawing.Size(114, 76);
+            this.btnEstudiantes.TabIndex = 0;
+            this.btnEstudiantes.Text = "Estudiantes";
+            this.btnEstudiantes.UseVisualStyleBackColor = false;
+            this.btnEstudiantes.Click += new System.EventHandler(this.btnEstudiantes_Click);
+            // 
             // Frm_MenuPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
